@@ -1,6 +1,6 @@
 import "./Matchup.css";
 import Play from "../assets/play.svg?react";
-import Win from "../assets/Win.svg?react";
+import Win from "../assets/win.svg?react";
 import { Advantage } from "../types/Matchups";
 import { useNavigate } from "react-router-dom";
 
