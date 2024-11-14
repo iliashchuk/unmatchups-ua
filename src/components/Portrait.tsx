@@ -7,10 +7,7 @@ export const Portrait: React.FC<{ heroName: string }> = ({ heroName }) => {
   return (
     <div
       style={{
-        backgroundImage: `url(/unmatchups-ua/${heroName.replace(
-          / /g,
-          "_"
-        )}.webp)`,
+        backgroundImage: `url(/${heroName.replace(/ /g, "_")}.webp)`,
         objectFit: "contain",
       }}
       className="matchup"
