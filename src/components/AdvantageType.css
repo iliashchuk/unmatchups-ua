@@ -1,0 +1,66 @@
+.advantage-type {
+  display: grid;
+  place-items: center;
+  writing-mode: vertical-lr;
+  transform: scale(-1, -1);
+  padding: 6px;
+  background-color: azure;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.counter-advantage {
+  color: rgb(52, 211, 153, 1);
+  background-color: rgb(52, 211, 153, 0.2);
+  filter: brightness(65%);
+  filter: contrast(75%);
+}
+
+.favoured-advantage {
+  color: rgb(74, 222, 128, 1);
+  background-color: rgb(74, 222, 128, 0.2);
+  filter: brightness(65%);
+  filter: contrast(75%);
+}
+
+.slightly-favoured-advantage {
+  color: rgb(163, 230, 53, 1);
+  background-color: rgb(163, 230, 53, 0.2);
+  filter: brightness(65%);
+  filter: contrast(75%);
+}
+
+.balanced-advantage {
+  color: rgb(96, 165, 250, 1);
+  background-color: rgb(96, 165, 250, 0.2);
+  filter: brightness(65%);
+  filter: contrast(75%);
+}
+
+.slightly-losing-advantage {
+  color: rgb(251, 191, 36, 1);
+  background-color: rgb(251, 191, 36, 0.2);
+  filter: brightness(65%);
+  filter: contrast(75%);
+}
+
+.losing-advantage {
+  color: rgb(251, 146, 60, 1);
+  background-color: rgb(251, 146, 60, 0.2);
+  filter: brightness(65%);
+  filter: contrast(75%);
+}
+
+.nightmare-advantage {
+  color: rgb(248, 113, 113, 1);
+  background-color: rgb(248, 113, 113, 0.2);
+  filter: brightness(65%);
+  filter: contrast(75%);
+}
+
+.unknown-advantage {
+  color: rgb(156, 163, 175, 1);
+  background-color: rgb(156, 163, 175, 0.1);
+  filter: brightness(65%);
+  filter: contrast(75%);
+}
