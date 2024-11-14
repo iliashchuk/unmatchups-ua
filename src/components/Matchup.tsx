@@ -61,7 +61,10 @@ export const Matchup: React.FC<Props> = ({
       }}
       className="matchup"
       style={{
-        backgroundImage: `url(/${opponentName.replace(/ /g, "_")}.webp)`,
+        backgroundImage: `url(/unmatchups-ua/${opponentName.replace(
+          / /g,
+          "_"
+        )}.webp)`,
         objectFit: "contain",
       }}
     >

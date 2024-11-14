@@ -96,16 +96,19 @@ const matchupData = data.name.reduce<MatchupData>((acc, heroMatchup) => {
   return acc;
 }, {});
 
-const router = createBrowserRouter([
-  {
-    path: "/:hero",
-    element: <MatchupViewer data={matchupData} heroOptions={heroOptions} />,
-  },
-  {
-    path: "/",
-    element: <HeroGallery heroOptions={heroOptions} />,
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/:hero",
+      element: <MatchupViewer data={matchupData} heroOptions={heroOptions} />,
+    },
+    {
+      path: "/",
+      element: <HeroGallery heroOptions={heroOptions} />,
+    },
+  ],
+  { basename: "/unmatchups-ua" }
+);
 
 function App() {
   return <RouterProvider router={router} />;
