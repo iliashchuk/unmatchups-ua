@@ -1,22 +1,21 @@
 import React from "react";
 import { MatchupTable } from "./MatchupTable";
-import { MatchupData } from "../types/Matchups";
 import { Navigate, useParams } from "react-router-dom";
 import { HeroSelect } from "./HeroSelect";
+import { useData } from "../context/DataContext";
 
-type Props = { data: MatchupData; heroOptions: string[] };
-
-export const MatchupViewer: React.FC<Props> = ({ data, heroOptions }) => {
+export const MatchupViewer: React.FC = () => {
+  const { matchupsData, set } = useData();
   const { hero } = useParams();
 
-  if (!hero || !data[hero]) {
+  if (!hero || !matchupsData[hero]) {
     return <Navigate to="/" />;
   }
 
   return (
     <>
-      <HeroSelect heroOptions={heroOptions} />
-      {hero && <MatchupTable heroName={hero} matchups={data[hero]} />}
+      <HeroSelect heroOptions={set} />
+      {hero && <MatchupTable heroName={hero} matchups={matchupsData[hero]} />}
     </>
   );
 };
