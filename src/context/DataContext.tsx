@@ -69,7 +69,7 @@ export const DataContextProvider: React.FC<React.PropsWithChildren<Props>> = ({
               advantage = Advantage.SlightlyLosing;
             } else if (winPercentage > 25) {
               advantage = Advantage.Losing;
-            } else if (winPercentage < 25) {
+            } else if (winPercentage <= 25) {
               advantage = Advantage.Nightmare;
             }
 

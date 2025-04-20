@@ -2,6 +2,12 @@
   box-sizing: border-box;
   height: 220px;
   width: 220px;
+
+  @media screen and (max-width: 768px) {
+    height: 140px;
+    width: 140px;
+  }
+
   padding: 12px;
   border-radius: 8px;
   background-color: #343434;
@@ -36,6 +42,11 @@
       rgba(0, 0, 0, 0.8898153011204482) 100%
     );
   }
+}
+
+.opponent {
+  margin-bottom: 12px;
+  text-align: left;
 }
 
 .indicator {

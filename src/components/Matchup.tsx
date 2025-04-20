@@ -41,7 +41,12 @@ const Stats: React.FC<{ plays: number; winPercentage: number }> = ({
   winPercentage,
 }) => (
   <span className="stats">
-    <Play /> {plays} <Win /> {winPercentage}%
+    <Play /> {plays}&nbsp;
+    {plays > 0 && (
+      <>
+        <Win /> {winPercentage}%
+      </>
+    )}
   </span>
 );
 
@@ -66,7 +71,7 @@ export const Matchup: React.FC<Props> = ({
       }}
     >
       <Stats plays={plays} winPercentage={winPercentage} />
-      <strong style={{ marginBottom: 12 }}>{opponentName}</strong>
+      <strong className="opponent">{opponentName}</strong>
       <AdvantageIndicator advantage={advantage} />
     </div>
   );
