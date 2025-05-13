@@ -58,6 +58,10 @@ select {
     calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
   background-size: 5px 5px, 5px 5px, 1px 1.5em;
   background-repeat: no-repeat;
+
+  @media (prefers-color-scheme: dark) {
+    color: #1a1a1a;
+  }
 }
 
 select:focus {
