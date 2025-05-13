@@ -67,16 +67,33 @@ const springSkirmishHeroes = [
   "Philippa",
 ];
 
-type Set = "uaHeroes" | "springSkirmishHeroes";
+const ladderHeroes = [
+  "Raptors",
+  "InGen",
+  "Dracula",
+  "Little Red Riding Hood",
+  "Geralt of Rivia",
+  "Ancient Leshen",
+  "Titania",
+  "T. Rex",
+  "Black Widow",
+  "The Wayward Sisters",
+  "Shakespeare",
+  "Philippa",
+];
+
+type Set = "uaHeroes" | "springSkirmishHeroes" | "ladderHeroes";
 
 const sets: Partial<Record<Set, string[]>> = {
   uaHeroes,
   springSkirmishHeroes,
+  ladderHeroes,
 };
 
 const setLabelMap: Record<Set, string> = {
   springSkirmishHeroes: "Spring Skirmish",
   uaHeroes: "Localized in UA",
+  ladderHeroes: "Ladder 4.4",
 };
 
 const router = createBrowserRouter([
